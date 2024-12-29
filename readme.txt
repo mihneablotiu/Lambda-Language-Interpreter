@@ -28,3 +28,7 @@ The tests make the following assumptions:
       within a given expression.
 * In case of conflict, the 'subst' function renames the bound variable
   by appending a '#' to its name.
+
+To run the tests:
+   cabal install --lib --package-env . base HTF containers Cabal-syntax mtl
+   runhaskell -isrc -itest test/InterpreterTest.hs
